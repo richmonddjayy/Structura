@@ -10,10 +10,10 @@ import {
   FileText,
   Clock,
   Calendar,
-  ChevronDown,
-  Home
+  ChevronDown
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
+import structuraLogo from "@/assets/structura-logo.png";
 
 import {
   Sidebar,
@@ -68,8 +68,12 @@ export function AppSidebar() {
         <div className="p-4 border-b border-sidebar-border">
           {!collapsed ? (
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-sidebar-primary rounded-lg flex items-center justify-center">
-                <Home className="w-5 h-5 text-sidebar-primary-foreground" />
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-white p-1">
+                <img 
+                  src={structuraLogo} 
+                  alt="Structura Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h2 className="text-lg font-semibold text-sidebar-foreground">Structura</h2>
@@ -78,8 +82,12 @@ export function AppSidebar() {
             </div>
           ) : (
             <div className="flex justify-center">
-              <div className="w-8 h-8 bg-sidebar-primary rounded-lg flex items-center justify-center">
-                <Home className="w-5 h-5 text-sidebar-primary-foreground" />
+              <div className="w-8 h-8 rounded-lg overflow-hidden bg-white p-1">
+                <img 
+                  src={structuraLogo} 
+                  alt="Structura Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           )}
