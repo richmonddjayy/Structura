@@ -72,7 +72,7 @@ export function AppSidebar() {
                 <Home className="w-5 h-5 text-sidebar-primary-foreground" />
               </div>
               <div>
-                <h2 className="text-lg font-semibold text-sidebar-foreground">WorkForce Pro</h2>
+                <h2 className="text-lg font-semibold text-sidebar-foreground">Structura</h2>
                 <p className="text-xs text-sidebar-foreground/60">Management Suite</p>
               </div>
             </div>
